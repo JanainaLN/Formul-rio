@@ -1,1 +1,111 @@
-/* Add styles here */
+*{
+        margin:0;
+  padding: 0;
+ box-sizing: border-box;
+ font-family: "Open Sans", sans-serif;
+ }/*1 rem = 16px*/
+/*1 rem = 10px8*/
+
+:root{
+  font-size: 62.5%;
+}
+  #page{
+max-width: 1200px;
+margin-inline: auto;
+}
+
+body {
+font-size: 1.6rem;
+background-color: rgb(0, 104, 117) ;
+color: #fff;
+}
+
+header{
+padding-block: 2rem;
+text-align: center;
+}
+fieldset{
+padding: 1.5rem;
+margin-bottom: 2rem;
+border-radius: 1rem;
+
+input{
+display: block;
+margin-top: .6rem;
+padding: .7rem;
+border-radius: 1rem;
+border: none;
+color:  oklch(35.9% 0.144 278.697);
+
+}
+input:focus{
+outline: 2px solid oklch(78.5% 0.115 274.713);
+}
+
+input::placeholder{
+outline:oklch(91.7% 0.08 205.041);
+}
+
+div{
+margin-bottom: 1rem;
+}
+
+input[type=file]{
+color: #fff;
+}
+
+input[type = checkbox]
+input[type = radio]{
+display: inline-block;
+outline: none;
+
+}
+}
+
+fieldset:nth-of-type(2) > div {
+margin-bottom: 2rem;
+
+h2{
+margin-bottom: 1rem;
+}
+textarea{
+display: block;
+margin-top: 1rem;
+border-radius: 1rem;
+border: none;
+padding: 1rem;        
+}
+textarea:focus{
+outline: 2px solid oklch(86.5% 0.127 207.078);
+}
+
+select{
+padding: .8rem;
+border-radius: 1rem;
+border: none;
+outline: none;
+}
+}
+button{
+margin-bottom: 2rem;
+padding: .6rem 1rem;
+background: oklch(69.6% 0.17 162.48);
+border: none;
+border-radius: 1rem;
+color: #fff;
+font-weight: 700;
+font-size: 1.6rem;
+}
+
+button:hover{
+background: oklch(77.7% 0.152 181.912);
+transition: ease-in-out .4s;
+cursor: pointer;
+
+}
+
+@media(max-width: 76.8px){
+#page{
+padding-inline: 2rem;
+}
+}
